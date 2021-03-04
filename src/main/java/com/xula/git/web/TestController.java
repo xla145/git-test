@@ -29,7 +29,9 @@ public class TestController {
     }
 
     @RequestMapping("/hello")
-    public void test() {
+    public String test(HttpServletRequest request) {
         System.out.println("hello world");
+        request.setAttribute("name", "xiaoming");
+        return "test";
     }
 }

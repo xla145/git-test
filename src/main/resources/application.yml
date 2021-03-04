@@ -5,3 +5,8 @@ spring:
 #      max-file-size: 100MB
 #      max-request-size: 100MB
 #      location: e:\\test
+  mvc:
+    view:
+      prefix: /WEB-INF/jsp/
+      suffix: .jsp
+
